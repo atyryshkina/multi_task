@@ -93,7 +93,7 @@ def get_mean_value(row):
 
 df['age_when_attended_assessment_centre'] = df[['age_when_attended_assessment_centre1', 'age_when_attended_assessment_centre2', 'age_when_attended_assessment_centre3']].apply(get_mean_value, axis=1)
 
-df = df.drop(['bmi1', 'bmi2', 'bmi3', 'age_when_attended_assessment_centre1', 'age_when_attended_assessment_centre2', 'age_when_attended_assessment_centre3'], axis=1)
+df = df.drop(['age_when_attended_assessment_centre1', 'age_when_attended_assessment_centre2', 'age_when_attended_assessment_centre3'], axis=1)
 
 
 #=======================
@@ -114,6 +114,7 @@ dwl_df = dwl_df.set_index('eid')
 
 for i in range(1, 41):
 	df[f'PC{i}'] = df['eid'].map(dwl_df[f'22009-0.{i}'])
+
 
 
 
