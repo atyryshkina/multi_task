@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+# the ethnic background field (21000) uses data encoding 1001
+# coding1001.tsv was downloaded from https://biobank.ctsu.ox.ac.uk/crystal/coding.cgi?id=1001
+
+
+
+
